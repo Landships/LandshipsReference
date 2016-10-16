@@ -40,7 +40,7 @@ namespace ChobiAssets.PTM
 			Layer_Collision_Settings ();
 			// Set Solver Iteration Count.
 			Rigidbody thisRigidbody = GetComponent < Rigidbody > ();
-			thisRigidbody.solverIterationCount = SIC;
+			thisRigidbody.solverIterations = SIC;
 			// Attach NavMeshObstacle for Bunker Tank.
 			if (thisRigidbody.isKinematic) { // Bunker Tank
 				NavMeshObstacle navMeshObstacle = gameObject.AddComponent < NavMeshObstacle > ();
